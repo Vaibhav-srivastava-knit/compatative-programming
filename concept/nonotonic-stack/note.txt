@@ -1,0 +1,6 @@
+on the basis of problem 1 
+3 more types of problem can be solved 
+1st smaller of right
+2nd larger to left
+3rd smaller to left
+ 
