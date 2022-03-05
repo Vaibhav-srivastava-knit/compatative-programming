@@ -18,7 +18,11 @@ for(i=0;i<arr[node].size();i++)
 {
 	int child=arr[node][i];
 	if(child==par)
+<<<<<<< HEAD
    	continue;
+=======
+	continue;
+>>>>>>> 1b6c9e8df47a81cd4fcdc7406946892d8830a060
 	if(vis[child]==1)
 	{
 		low[node]=min(low[node],in[child]);
@@ -48,7 +52,10 @@ int main()
 	dfs(1,-1);
 	for(i=1;i<=v;i++)
 	{
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 1b6c9e8df47a81cd4fcdc7406946892d8830a060
 		if(cut_ver[i])
 		cout<<i<<" is a cut vertex"<<endl;
 	}

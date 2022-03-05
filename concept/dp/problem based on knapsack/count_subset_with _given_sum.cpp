@@ -6,7 +6,11 @@ int count(int a[],int n,int s)
 	int i,j;
 	for(i=1;i<n+1;i++)
 	{
+<<<<<<< HEAD
 		for(j=0;j<s+1;j++)
+=======
+		for(j=1;j<s+1;j++)
+>>>>>>> 1b6c9e8df47a81cd4fcdc7406946892d8830a060
 		{
 			if(j>=a[i-1])
 		    dp[i][j]=dp[i-1][j-a[i-1]]+dp[i-1][j];

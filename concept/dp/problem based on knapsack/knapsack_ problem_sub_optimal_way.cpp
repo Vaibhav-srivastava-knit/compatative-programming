@@ -6,9 +6,15 @@ int knapsack(int wt[],int val[],int n,int size)
 	if(n==0||size==0)
 	   return 0;
 	if(size<wt[n-1])
+<<<<<<< HEAD
     ans= knapsack(wt,val,n-1,size);
     if(size>=wt[n-1])
         ans=max((knapsack(wt,val,n-1,size-wt[n-1])+val[n-1]),(knapsack(wt,val,n-1,size)));
+=======
+      ans= knapsack(wt,val,n-1,size); 
+    if(size>=wt[n-1])
+        ans=max((knapsack(wt,val,n-1,size-wt[n-1])+val[n-1]),(knapsack(wt,val,n-1,size))); 
+>>>>>>> 1b6c9e8df47a81cd4fcdc7406946892d8830a060
     return ans;
 
 }
