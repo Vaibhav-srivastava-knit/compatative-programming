@@ -2,7 +2,7 @@
 using namespace std;
 #define inf 100000001
 vector<pair<int ,int> > arr[10000];
-int dist[10000]; 
+int dist[10000];
 int main()
 {
 	 int i,a,b,w,ver,e;
@@ -21,7 +21,7 @@ int main()
 	while(!pq.empty())
 	{
 	int curr;
-	int curr_d;	
+	int curr_d;
 	curr_d=pq.top().first;
 	curr=pq.top().second;
 	pq.pop();
@@ -32,12 +32,12 @@ int main()
 		{
 			dist[child.first]=child.second+curr_d;
 			pq.push({dist[child.first],child.first});
-			
+
 		}
-     } 
+     }
 	}
 	for(i=1;i<=ver;i++)
 	cout<<dist[i]<<" ";
-	
+
 }
 
